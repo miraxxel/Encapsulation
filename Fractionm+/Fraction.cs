@@ -114,18 +114,15 @@ namespace Fraction
         }
         public static bool operator <(Fraction left, Fraction right)
         {
-            return left.Improper().Numerator * right.Improper().Denominator <
-                right.Improper().Numerator * left.Improper().Denominator;
+            return !(left > right);
         }
         public static bool operator >=(Fraction left, Fraction right)
         {
-            return left.Improper().Numerator * right.Improper().Denominator >=
-                right.Improper().Numerator * left.Improper().Denominator;
+            return !(left < right);
         }
         public static bool operator <=(Fraction left, Fraction right)
         {
-            return left.Improper().Numerator * right.Improper().Denominator <=
-                right.Improper().Numerator * left.Improper().Denominator;
+            return !(left > right);
         }
 
         //          Methods:

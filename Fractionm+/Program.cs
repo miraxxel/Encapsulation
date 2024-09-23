@@ -35,20 +35,20 @@ namespace Fraction
             A.Print();
             B.Print();
             //C.Print();
-            //Console.WriteLine(A / B);
+            Console.WriteLine(A / B);
 
             // перегрузка оператора * автоматически приводит к тому, что составной оператор *= тоже перегружен, сам оператор присвоения (=), уже перегружен неявно
-            A *= B;
-            Console.WriteLine(A);
-            A /= B;
-            Console.WriteLine(A);
+            //A *= B;
+            //Console.WriteLine(A);
+            //A /= B;
+            //Console.WriteLine(A);
 
-            // c# запрещает неявное преобразование типов в меньшую сторону
-            for (Fraction i = new Fraction(10); i < new Fraction(1, 2); i--)
-            {
-                Console.Write(i + "\t");
-            }
-            Console.WriteLine();
+            //// c# запрещает неявное преобразование типов в меньшую сторону
+            //for (Fraction i = new Fraction(1, 2); i < new Fraction(10); i++)
+            //{
+            //    Console.Write(i + "\t");
+            //}
+            //Console.WriteLine();
         }
     }
 }
